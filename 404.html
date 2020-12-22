@@ -1,1 +1,151 @@
-<h1> hola </h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Crear cuenta CLAN</title>
+	<link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/estilo.css">
+	<link href = "https://fonts.googleapis.com/css2? family = Poppins & display = swap" rel = "stylesheet">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <header>
+		<nav>
+			<div class="logo">Clan</div>
+			<label for="btn" class="icon">
+				<span class="fa fa-bars"></span>
+			</label>
+			<input type="checkbox" name="btn" id="btn">
+			<ul>
+				<li><a href="../index.php">Inicio</a></li>
+				<li>
+					<label for="btn-1" class="show">Caracteristicas +</label>
+					<a href="#">Caracteristicas</a>
+					<input type="checkbox" id="btn-1">
+					<ul>
+						<li><a href="historia.html">Historia</a></li>
+						<li><a href="quieres_somos.html">Objetivos</a></li>
+						<li><a href="obj_mis_vis.html">Visión</a></li>
+						<li><a href="obj_mis_vis.html">Misión</a></li>
+					</ul>
+				</li>
+				<li><a href="">Ingresar</a></li>
+				<li><a href="registro.html">Crear cuenta</a></li>
+			</ul>
+		</nav>
+    </header>
+    <div class="container">
+        <div class="container-form-acc">
+            <h1>Crear Cuenta</h1>
+            <form action="registro.php" class="needs-validation" method="POST">
+                <label for="Email">Correo*</label>
+				<input type="email" placeholder="" name="Email" class="form-control">
+				<label for="Name">Nombres*</label>
+				<input type="text" placeholder="" name="Name" class="form-control" required>
+				<label for="Name">Apellidos*</label>
+				<input type="text" placeholder="" name="LastName" class="form-control" required>
+
+                <label for="Pass">Contraseña*</label>
+                <input type="password" placeholder="" name="Pass" class="form-control">
+                <label for="RePass">Repita contraseña*</label>
+                <input type="password" placeholder="" name="RePass" class="form-control">
+
+                    <label for="cb_politica" class="label-politica">
+						<center> 
+						<input type="checkbox" id="cb_politica" >
+						He leído y acepto los Términos y condiciones  y Política de Privacidad</label>
+						</center>
+                <button>
+                    <span>Registrarme</span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="contenedor-form" hidden>
+        <div class="txt-crear-acc">
+            <a href="../index.php">Ingresar</a>
+        </div>
+        <div class="formulario">
+            <h2>Crear Cuenta CLAN</h2>
+            <form action="#">
+                <input type="email" placeholder="Correo" required>
+                <input type="password" placeholder="Contraseña" required>
+                <input type="password" placeholder="Repetir Contraseña" required>
+
+                <input type="text" placeholder="Número de Celular">
+                <input type="date" name="txtdate" placeholder="Fecha de Nacimiento" required>
+                <fieldset class="fieldset">
+					<legend>Sexo</legend>
+					<table width="100%">
+						<tr>
+							<td><input type="radio" name="rdSexo"> Masculino</td>
+							<td><input type="radio" name="rdSexo">Femenino</td>
+							<td><input type="radio" name="rdSexo">No definido</td>
+						</tr>
+					</table>
+                </fieldset>
+                <input type="submit" value="Crear Cuenta">
+            </form>
+        </div>
+    </div>
+
+
+    <footer>
+		<div class="container-footer">
+			<div class="caja-footer">
+				<h2>Acerca</h2><br>
+				<p>Bienvenidos a Clan</p>
+				<div class="social">
+					<a href="#" class="fb">
+						<i class="fab fa-facebook"></i>
+					</a>
+					<a href="#" class="tw">
+						<i class="fab fa-twitter"></i>
+					</a>
+					<a href="#" class="in">
+						<i class="fab fa-instagram"></i>
+					</a>
+					<a href="#" class="li">
+						<i class="fab fa-linkedin"></i>
+					</a>
+					<a href="#" class="yo">
+						<i class="fab fa-youtube"></i>
+					</a>
+				</div>
+			</div>
+			<div class="caja-footer">
+				<h2>Dirección</h2><br>
+				<div class="direccion">
+					<a href="#">
+						<i class="fas fa-map-marker-alt"></i>
+						Interior 54 Centro Comercial Canturias, <br>
+						Calle Cantuarias 140, Miraflores 15074
+					</a>
+					<a href="tel:+51 01 458-5201">
+						<i class="fas fa-phone-square-alt"></i>
+						+51 01 458-5201
+					</a>
+					<a href="mailto:contacto@webclan.com">
+						<i class="fas fa-envelope"></i>
+						contacto@webclan.com
+					</a>
+				</div>
+			</div>
+			<div class="caja-footer">
+				<h2>Suscribirse</h2><br>
+				<form action="email.php" method="POST">
+					<label for="mail">Correo: <span>*</span></label>
+					<input type="text" placeholder="Ingrese su correo" name="email" id="email">
+					<textarea hidden id="email" rows="3" name="email"></textarea>
+					<button type="submit">Enviar</button>
+				</form>
+			</div>
+		</div>
+		<div class="autor">
+			<p><span>CLAN</span> copyright &copy; 2020</p>
+		</div>
+	</footer>
+</body>
+</html> 
