@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body.body-panel-admin {
+    background: linear-gradient(to right, rgba(10,10,10,1) 0%, rgba(252,34,85,1) 51%, rgba(247,33,83,1) 52%, rgba(10,10,10,1) 100%);
+}
+.container-fluid {
+    width: 97%;
+    margin: 20px auto;
+    padding: 20px;
+}
+#col-menu, #col-contenido {
+    background: white;
+    border-radius: 10px;
+}
+#col-menu {
+    right: 5px;
+    width: 100%;
+    /*height: 100vw;*/
+    text-align: center;
+}
+#col-contenido {
+    left: 5px;
+}
+.menu-panel {
+    text-align: left;
+}
+.menu-panel a {
+    display: block;
+    width: 100%;
+    margin: 20px 0px;
+}
+#col-menu img {
+    width: 80px;
+    border-radius: 50%;
+}
+h2 {
+    margin-top: 15px;
+}
+/* table diseño */
+#table-clientes {
+    width: 100%;
+    margin-top: 20px;
+}
+#table-clientes td, #table-clientes th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+#table-clientes tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+#table-clientes tr:hover {background-color: #ddd;}
+#table-clientes th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background: #4CAF50;
+}
+
+/* Perfil cliente */
+.p-hola {
+    padding: 10px;
+}
+.panel-flex {
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid rgba(40, 40, 40, 0.2);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.panel-flex article {
+    width: 300px;
+    margin: 10px;
+    padding: 5px;
+}
+.panel-flex article label {
+    width: 100%;
+}
+.salir {
+    width: 100%;
+    margin-left: 25px;
+}
+.salir a {
+    padding: 8px;
+    background: chartreuse;
+    border-radius: 5px;
+}

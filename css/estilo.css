@@ -1,0 +1,347 @@
+@import url(nav.css);
+@import url(footer.css);
+@import url(form_acc.css); /* Formulario de registro e iniciar sesión*/
+@import url(history.css);
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /*background: url(../Fotos/fondo.jpeg);*/
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Times New Roman';
+}
+.a1 {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+.container {
+    /*margin: auto;*/
+    width: 90%;
+    margin-top: 75px;
+    padding: 1em;
+}
+header {
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    position: fixed;
+}
+.body-admin {
+    background-image: url("../imagenes/tienda1.jpg");
+}
+/* Portal ropa */
+.container-fluid {
+    width: 98%;
+}
+.container-fluid img {
+    width: 100%;
+    height: 40vw;
+    object-fit: cover;
+    filter: brightness(100%);
+}
+.container-fluid img:hover {
+    filter: brightness(80%);
+}
+p.ofertas-text {
+    background: teal;
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 2px;
+    color: white;
+    padding: 10px;
+    font-size: 25px;
+    letter-spacing: 8px;
+}
+h2.titulo-ropa, p.detalle-ropa {
+    color: #333;
+}
+p.precio-ropa {
+    color: crimson;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+@media (max-width:768px) {
+    .container {
+        width: 98%;
+    }
+}
+/**************** TEST ********************/
+
+
+/******************* NAV *********************/
+
+
+/* formulario registro */
+
+.table-form-compra select {
+    outline: 0;
+    border: 1 !important;
+    width: 100%;
+    font-size: 1em;
+    letter-spacing: 4px;
+    padding: 10px 25px;
+    margin-bottom: 10px;
+    /*height: 100%;
+    margin: 0;
+    padding: 0 0 0 .5em;
+    color: #fff;
+    font-size: 1em;
+    letter-spacing: .8px;
+    cursor: pointer;*/
+}
+
+.contenedor-form select {
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    background: #2c3e50;
+    border: 0 !important;
+    background-image: none;
+}
+
+.contenedor-form .select {
+    position: relative;
+    display: block;
+    width: 13em;
+    height: 3em;
+    background: #2c3e50;
+    overflow: hidden;
+    line-height: 3;
+    border-radius: .25em;
+    border-bottom: 3px solid #ff851b;
+}
+.contenedor-form select {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0 0 0 .5em;
+    color: #fff;
+    font-size: 1em;
+    letter-spacing: .8px;
+    cursor: pointer;
+}
+
+.contenedor-form .select::after {
+    content: '\25bc';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 1em;
+    background: #344953;
+    pointer-events: none;
+    color: #ff851b;
+    transition: all .4s ease;
+}
+
+.contenedor-form .select:hover::after {
+    color: #1c05eb;
+}
+
+.contenedor-form .select:hover {
+    border-bottom: 3px solid #1c05eb;
+}
+
+.contenedor-form {
+    position: relative;
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    max-width: 500px;
+    margin: 48px auto;
+    color: #fff;
+    border-radius: 5px;
+    /*padding: 40px;*/
+}
+
+.table-form-compra {
+    position: relative;
+    /*background: rgba(175, 183, 255, 0.5);*/
+    /*max-width: 1000px;*/
+    margin: 48px auto; /*distancia desde arriba y al centro*/
+    /*color: rgb(12, 2, 102);*/
+    border-radius: 5px;
+    padding: 20px;
+    /*padding: 40px;*/
+}
+
+.table-form-compra-derecha {
+    padding: 20px;
+}
+
+.contenedor-form .txt-crear-acc {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    border-top: 2px solid #ff851b;
+    border-bottom: 2px solid #ff851b;
+    
+}
+.contenedor-form .txt-crear-acc a {
+    letter-spacing: 1px;
+    color: white;
+    text-decoration: none;
+}
+
+.contenedor-form .txt-crear-acc:hover {
+    border-top: 2px solid #1c05eb;
+    border-bottom: 2px solid #1c05eb;
+}
+
+.contenedor-form h2 {
+    margin: 0 0 28px 0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.table-form-compra input[type="text"], 
+.table-form-compra input[type="password"], 
+.table-form-compra input[type="email"], 
+.table-form-compra input[type="date"] {
+    outline: none;
+    background: rgba(57, 47, 150, 0.2);
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    color: rgb(46, 24, 124);
+    border: none;
+    border-radius: 2%;
+    /*border-bottom: 4px solid #ff851b;*/
+    font-family: cursive;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0 0 8px 0;;
+    /*transition: all .4s ease;*/
+}
+
+.contenedor-form input[type="text"], 
+.contenedor-form input[type="password"], 
+.contenedor-form input[type="email"], 
+.contenedor-form input[type="date"] {
+    outline: none;
+    background: rgba(0, 0, 0, 0.5);
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    color: #fff;
+    border: none;
+    border-radius: 10%;
+    border-bottom: 4px solid #ff851b;
+    font-family: cursive;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0 0 10px 0;;
+    transition: all .4s ease;
+}
+
+/* Click encima de los input*/
+.contenedor-form input[type="text"]:focus,
+.contenedor-form input[type="password"]:focus,
+.contenedor-form input[type="email"]:focus,
+.contenedor-form input[type="date"]:focus {
+    border-bottom: 4px solid #1c05eb;
+}
+
+.fieldset-pago {
+    text-align: center;
+    text-size-adjust: 50px;
+    margin-bottom: 10px;
+    border-bottom: 4px solid #ff851b;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: all .4s ease;
+}
+.fieldset {
+    text-align: center;
+    text-size-adjust: 50px;
+    margin-bottom: 10px;
+    border-bottom: 4px solid #ff1bf4;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: all .4s ease;
+}
+
+.fieldset:hover {
+    text-align: center;
+    text-size-adjust: 50px;
+    margin-bottom: 10px;
+    border-bottom: 4px solid #1c05eb;
+    border-radius: 10%;
+    font-size: 20px;
+}
+
+.contenedor-form fieldset input[type="radio"] {
+    margin-bottom: 10px;
+}
+
+/*************botones*************/
+.contenedor-form input[type="submit"] {
+    background: #ff851b;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px 0;
+    font-weight: normal;
+    font-family: fantasy;
+    letter-spacing: 1px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.contenedor-form input[type="submit"]:hover {
+    background: rgba(0, 117, 217, 0.9);
+}
+
+.table-form-compra input[type="submit"] {
+    background: #ff851b;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px 0;
+    font-weight: normal;
+    font-family: fantasy;
+    letter-spacing: 1px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.contenedor-form .recuperar-contra {
+    background: rgb(48, 216, 132);
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.contenedor-form .recuperar-contra a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.contenedor-form .formulario {
+    padding: 40px; /* tamaño del encuadro*/
+    /*display: none;*/
+}
+
+/*.contenedor-form .formulario:nth-child(2) {
+    display: block;
+}*/ 

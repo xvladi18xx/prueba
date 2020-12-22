@@ -1,0 +1,104 @@
+footer {
+    width: 100%;
+    background: #222;
+    color: #aaa;
+    margin-top: 20px;
+    position: absolute; /**/
+}
+
+.container-footer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; /* evitar que salga barra horizontal*/
+}
+.caja-footer {
+    flex: 1;
+    margin: 15px;
+    min-width: 300px;
+}
+.caja-footer h2{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-bottom: 2px solid #555;
+    position: relative;
+    margin-top: 15px;
+}
+.caja-footer h2::before{
+    content: "";
+    width: 100px; /* tamaño de linea cyan*/
+    height: 100%;
+    border-bottom: 2px solid cyan;
+    position: absolute;
+    margin-top: 1.5px; /* Añadido bug con boostrap */
+}
+.caja-footer a{
+    color: #aaa;
+    text-decoration: none;
+    display: inline-block;
+}
+.caja-footer a i{
+    background: #333;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 5px;
+    transition: 0.5s linear;
+}
+.caja-footer a:hover,
+.caja-footer a:hover i{
+    /*color: cyan;*/
+    border-radius: 50%;
+}
+.social .fb:hover {
+    color: #0084FF;
+}
+.social .tw:hover {
+    color: white;
+}
+.social .in:hover {
+    color: crimson;
+}
+.social .li:hover {
+    color: #2977C9;
+}
+.social .yo:hover {
+    color: #CC0000;
+}
+.social {
+    margin-top: 5px;
+}
+.direccion a{
+    display: block;
+    margin-bottom: 15px;
+    font-size: 1.0em;
+}
+.container-footer form input, form textarea{
+    width: 100%;
+    min-height: 30px;
+    border: none;
+    outline: none;
+    padding-left: 5px;
+    margin-bottom: 10px;
+}
+.container-footer span, .autor span {
+    color: cyan;
+}
+.container-footer form button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: cyan;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+.autor {
+    width: 100%;
+    background: black;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 1em;
+    /*text-transform: uppercase;*/
+    overflow: hidden;
+}

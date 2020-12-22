@@ -1,0 +1,105 @@
+.container-form-acc {
+    margin: auto;
+    width: 40%;
+    /*border: solid 3px rgb(189, 228, 228);*/
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 50px;
+}
+.container-form-acc h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+.container-form-acc input[type="text"],
+.container-form-acc input[type="email"],
+.container-form-acc input[type="password"] {
+    /*outline: none;
+    display: block;*/
+    width: 100%;
+    padding: 15px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    transition: all .4s ease;
+}
+/*.container-form-acc input[type="text"]:focus,
+.container-form-acc input[type="email"]:focus,
+.container-form-acc input[type="password"]:focus {
+    border: 1px solid springgreen;
+}*/
+.container-form-acc button {
+    outline: none;
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    background: crimson;
+    cursor: pointer;
+}
+.container-form-acc button:hover {
+    background: cyan;
+}
+.container-form-acc .span-button {
+    padding: 15px;
+    color: white;
+    letter-spacing: 5px;
+    font-size: 20px;
+    font-family: monospace;
+    font-weight: 900;
+}
+.label-politica {
+    color: darkcyan;
+}
+.container-form-acc input[type="checkbox"] {
+    margin: 5px;
+    /*float: left;*/
+}
+.regis {
+    padding: 5px;
+    background: red;
+}
+a.olvide {
+    margin-top: 15px;
+    padding: 10px;
+    /*margin: auto;*/
+    width: 100%;
+    background: cyan;
+    border-radius: 3px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
+    text-align: center;
+}
+/*.olvide:hover {
+    background: crimson;
+}*/
+.olvide- {
+    color: #333; 
+}
+.olvide-:hover {
+    color: cyan; 
+}
+.container-form-acc a {
+    text-decoration: none;
+    color: rgba(57, 57, 57, 0.5)
+}
+.admin, .recuperar-contra {
+    padding: 8px;
+    color: #333;
+    text-align: center;
+}
+@media (max-width:1000px) {
+    .container-form-acc {
+        width: 60%;
+    }
+}
+@media (max-width:715px) {
+    .container-form-acc {
+        width: 70%;
+    }
+}
+@media (max-width:550px) {
+    .container-form-acc {
+        width: 100%;
+    }
+}

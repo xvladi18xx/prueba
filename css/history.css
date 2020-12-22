@@ -1,0 +1,42 @@
+/* historia */
+.historia-img {
+    padding: 15px;
+}
+.historia-img img {
+    width: 100%;
+    height: 100%;
+}
+.historia-text h1 {
+    color: crimson;
+    text-align: center;
+}
+/* objetivos */
+.objetivos p {
+    text-align: justify;
+}
+.objetivos h1 {
+    color: crimson;
+    text-align: center;
+}
+
+
+
+
+
+/*.container-historia {
+    width: 100%;
+    padding-top: 10px;
+    background: rgb(248, 199, 199);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.container-historia-text {
+    width: 60%;
+}
+.container-historia-img {
+    width: 35%;
+}
+.container-historia-img img {
+    width: 100%;
+}*/
